@@ -87,16 +87,20 @@
         <legend>An interesting fact about you!</legend>
         <label class="form__field">
           Do you love cats?
-          <input 
-            type="radio" 
-            name="cats"
-          >
-          Yes
-          <input 
-            type="radio" 
-            name="cats"
-          >
-          No
+          <label>
+            <input 
+              type="radio" 
+              name="cats"
+            >
+            Yes
+          </label>
+          <label>
+            <input 
+              type="radio" 
+              name="cats"
+            >
+            No
+          </label>
         </label>
         <label class="form__field">
           What is your favorite color?
@@ -141,15 +145,13 @@
             required
             minlength="5"
             maxlength="100"
-          >
-          </textarea>
+          ></textarea>
         </label>
         <label class="form__field-last">
           Would you recommend us?
           <select name="recomend" required>
-            <option value="yes">yes</option>
             <option value="yes">no</option>
-            <option value="yes">yes</option>
+            <option value="yes" selected>yes</option>
           </select>
         </label>
       </fieldset>
